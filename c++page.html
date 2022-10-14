@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/2258c01022.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+-->
+	<title>c++ course</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">CoDivine</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="D:\webproject\index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="D:\webproject\AboutUs.html">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Courses
+                        </a>
+                        <ul class="dropdown-menu">
+                           <li><a class="dropdown-item" href="D:\webproject\cpage.html">C Language</a></li>
+                            <li><a class="dropdown-item" href="D:\webproject\c++page.html">C++</a></li>
+                            <li><a class="dropdown-item" href="D:\webproject\javapage.html">Java</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="D:\webproject\contact.html">Contact</a>
+                    </li>
+
+                </ul>
+                <div class="px-5">
+                    <button type="button" class="btn btn-outline-light" data-bs-toggle="modal"
+                        data-bs-target="#LoginModal">Login</button>
+                    <button type="button" class="btn btn-outline-light" data-bs-toggle="modal"
+                        data-bs-target="#SignUpModal">SignUp</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+     <!-- login Modal -->
+    <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="LoginModalLabel">Login to CoDivine</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- sign up Modal -->
+    <div class="modal fade" id="SignUpModal" tabindex="-1" aria-labelledby="SignUpModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="SignUpModalLabel">Create Account in CoDivine</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+
+                            <label for="exampleInput1" class="form-label">Name</label>
+                            <input type="name" class="form-control" id="exampleInputname1" aria-describedby="name">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                            <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="cexampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">create Account</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+    	<div class="row my-3">
+    		<div class="col-8 fs-5">
+    			<h3 class="text-decoration-underline">What is C++ Language</h3>
+•	C++ is a statically typed, compiled, general-purpose, case-sensitive programming language that supports procedural and object-oriented programming.<br>
+•	C++ is an Object Oriented Programming language developed by Bjarne Stroustrp at AT & T Bell Laboratories, USA in the early 1980’s.<br>
+•	C++ is nothing but C language extended or improved with the concept of Classes and Objects. Hence every valid C program is also a C++ program.<br>
+•	C++ is called as a superset of C programming language.<br>
+•	The major design creation of C++ was to retain its compatibility with C programming language.<br>
+•	All valid C programs are valid C++ program. Hence a C++ compiler can compile and execute all valid C programs but reverse is not true.<br>
+•	The C++ language uses most of the C language features like decision making statements, looping statements, structure etc.<br> 
+•	Apart from supporting the keywords of C language, C++ also adds certain additional keywords which help implementing object oriented paradigm.
+
+    		</div>
+    		<div class="col-4">
+    			<img src="D:\webproject\whatisC++.png" width="400px" height="400px">
+    		</div>
+    	</div>
+    </div>
+    <div class="container my-2">
+    	<h4 class="text-danger"><marquee>Note: Full tutorial will be posted very soon...</marquee></h4>
+    </div>
+
+    <footer class="pt-4 my-md-0 pt-md-0 border-top bg-dark text-light">
+        <div class="row p-3 bg-black bg-opacity-10  border-start-0 border-end-0 rounded-end ">
+            <div class="col-6 col-md-2 mb-3">
+                <h5>Quick links</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                </ul>
+            </div>
+
+            <div class="col-6 col-md-2 mb-3">
+                <h5>Features</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">problem-solving</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">customer support</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Easy way</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Placement Prepartion</a></li>
+                </ul>
+            </div>
+
+            <div class="col-6 col-md-2 mb-3">
+                <h5>Contact Us</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">vishwasv490@gmail.com</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">+91 8769385572</a></li>
+                </ul>
+            </div>
+
+
+            <div class="col-md-5 offset-md-1 mb-3">
+                <form>
+                    <h5>Join us on Socials Platforms </h5>
+                    <p>These links are of our Social media platform .</p>
+                    <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                        <div class="container">
+                            <footer
+                                class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                                <div class="col-md-4 d-flex align-items-center">
+                                    <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                                        <svg class="bi" width="30" height="24">
+                                            <use xlink:href="#bootstrap"></use>
+                                        </svg>
+                                    </a>
+                                    <span class="mb-3 mb-md-0 text-muted">© 2022 Decoder, Inc</span>
+                                </div>
+
+                                <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                                  <li class="ms-3"><a class="text-muted"
+                                            href="https://www.linkedin.com/in/vishwas-verma-b15a6b241/"><img
+                                                src="D:\webproject\linkedin.png" width="24" height="24">
+                                            <use xlink:href="#twitter"></use></svg>
+                                        </a></li>
+                                    <li class="ms-3"><a class="text-muted" href="https://www.instagram.com/vishwas_verma5/"><img
+                                                src="D:\webproject\instagram.png" width="24" height="24">
+                                            <use xlink:href="#instagram"></use></svg>
+                                        </a></li>
+                                    <li class="ms-3"><a class="text-muted" href="https://github.com/Vishwas-verma5"><img src="D:\webproject\github.png"
+                                                width="24" height="24">
+                                            <use xlink:href="#facebook"></use></svg>
+                                        </a></li>
+                                </ul>
+                            </footer>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </footer>  
+</body>
+</html>

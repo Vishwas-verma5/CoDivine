@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <title>Contact Us</title>
+
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" >
+    
+  </script>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">CoDivine</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="D:\webproject\index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="D:\webproject\AboutUs.html">About Us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Courses
+            </a>
+            <ul class="dropdown-menu">
+               <li><a class="dropdown-item" href="D:\webproject\cpage.html">C Language</a></li>
+                            <li><a class="dropdown-item" href="D:\webproject\c++page.html">C++</a></li>
+                            <li><a class="dropdown-item" href="D:\webproject\javapage.html">Java</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" href="D:\webproject\contact.html">Contact</a>
+          </li>
+
+        </ul>
+        <div class="px-5">
+          <button type="button" class="btn btn-outline-light" data-bs-toggle="modal"
+            data-bs-target="#LoginModal">Login</button>
+          <button type="button" class="btn btn-outline-light" data-bs-toggle="modal"
+            data-bs-target="#SignUpModal">SignUp</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- login Modal -->
+  <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="LoginModalLabel">Login to CoDivine</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- sign up Modal -->
+  <div class="modal fade" id="SignUpModal" tabindex="-1" aria-labelledby="SignUpModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="SignUpModalLabel">Create Account in CoDivine</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+
+              <label for="exampleInput1" class="form-label">Name</label>
+              <input type="name" class="form-control" id="exampleInputname1" aria-describedby="name">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+              <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+              <input type="password" class="form-control" id="cexampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">create Account</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- form start  -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-6 bg-light my-5">
+        <h3 class="text-center ">Our Contact Details</h3>
+        <div class="container my-5">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill"
+            viewBox="0 0 16 16">
+            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+          </svg>
+          Gujar ki thadi,Jaipur Rajasthan India<br><br>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-telephone-forward" viewBox="0 0 16 16">
+            <path
+              d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511zm10.762.135a.5.5 0 0 1 .708 0l2.5 2.5a.5.5 0 0 1 0 .708l-2.5 2.5a.5.5 0 0 1-.708-.708L14.293 4H9.5a.5.5 0 0 1 0-1h4.793l-1.647-1.646a.5.5 0 0 1 0-.708z" />
+          </svg>
+          +91 8769385572<br>
+          +91 8302581605<br><br>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-envelope-paper" viewBox="0 0 16 16">
+            <path
+              d="M4 0a2 2 0 0 0-2 2v1.133l-.941.502A2 2 0 0 0 0 5.4V14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V5.4a2 2 0 0 0-1.059-1.765L14 3.133V2a2 2 0 0 0-2-2H4Zm10 4.267.47.25A1 1 0 0 1 15 5.4v.817l-1 .6v-2.55Zm-1 3.15-3.75 2.25L8 8.917l-1.25.75L3 7.417V2a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v5.417Zm-11-.6-1-.6V5.4a1 1 0 0 1 .53-.882L2 4.267v2.55Zm13 .566v5.734l-4.778-2.867L15 7.383Zm-.035 6.88A1 1 0 0 1 14 15H2a1 1 0 0 1-.965-.738L8 10.083l6.965 4.18ZM1 13.116V7.383l4.778 2.867L1 13.117Z" />
+          </svg>
+          Decoder@info.com<br><br><br>
+          <marquee>
+            <h5>We are here for Solving your problem!</h5>
+          </marquee>
+
+        </div>
+
+      </div>
+      <div class="col-6">
+        <div class="container my-5">
+          <form>
+            <div class="container">
+              <h2 style="text-align: center;">Contact Us</h2>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Mobile Number</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="form-group">
+              <label for="address">Address</label>
+              <input type="text" class="form-control" id="address">
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Message</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary my-3">Submit</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  
+  <!-- counter design -->
+
+  <div>
+    <div class="px-1 py-5" id="featured-3 ">
+    <h2 class="pb-4 border-bottom text-center">Some Record given below</h2>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <div class="feature col text-center">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+          <img src="D:\webproject\student.png" width="70px" height="70px" >
+        </div>
+        <h2 class="fs-2 counter">100</h2>
+        <p>Number of Registered Students.</p>
+        
+      </div>
+      <div class="feature col  text-center">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+          <img src="D:\webproject\course.png" width="70px" height="70px">
+        </div>
+        <h2 class="fs-2 counter">50</h2>
+        <p>Number of Courses</p>
+      </div>
+      <div class="feature col text-center">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+         <img src="D:\webproject\placement.png" width="70px" height="70px">
+        </div>
+        <h2 class="fs-2 counter">90</h2>
+        <p>Got Placement</p>
+      </div>
+    </div>
+  </div>
+  </div>
+ 
+  <footer class="pt-4 my-md-0 pt-md-0 border-top bg-dark text-light">
+    <div class="row p-3 bg-black bg-opacity-10  border-start-0 border-end-0 rounded-end ">
+      <div class="col-6 col-md-2 mb-3">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-2 mb-3">
+        <h5>Features</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">problem-solving</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">customer support</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Easy way</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Placement Prepartion</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-2 mb-3">
+        <h5>Contact Us</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">vishwasv490@gmail.com</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">+91 8769385572</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-5 offset-md-1 mb-3">
+        <form>
+          <h5>Join us on Socials Platforms </h5>
+          <p>These links are of our Social media platform .</p>
+          <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+            <div class="container">
+              <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                <div class="col-md-4 d-flex align-items-center">
+                  <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                    <svg class="bi" width="30" height="24">
+                      <use xlink:href="#bootstrap"></use>
+                    </svg>
+                  </a>
+                  <span class="mb-3 mb-md-0 text-muted">© 2022 Decoder, Inc</span>
+                </div>
+
+                <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                  <li class="ms-3"><a class="text-muted"
+                                            href="https://www.linkedin.com/in/vishwas-verma-b15a6b241/"><img
+                                                src="D:\webproject\linkedin.png" width="24" height="24">
+                                            <use xlink:href="#twitter"></use></svg>
+                                        </a></li>
+                                    <li class="ms-3"><a class="text-muted" href="https://www.instagram.com/vishwas_verma5/"><img
+                                                src="D:\webproject\instagram.png" width="24" height="24">
+                                            <use xlink:href="#instagram"></use></svg>
+                                        </a></li>
+                                    <li class="ms-3"><a class="text-muted" href="https://github.com/Vishwas-verma5"><img src="D:\webproject\github.png"
+                                                width="24" height="24">
+                                            <use xlink:href="#facebook"></use></svg>
+                                        </a></li>
+                </ul>
+              </footer>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </footer>
+
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js">
+    
+  </script>
+  <script src="D:\webproject\jquery.counterup.min.js"></script>
+
+<script>
+  jQuery(document).ready(function($){
+    $('.counter').counterUp({
+    delay: 2,
+    time: 1000
+});
+  });
+</script>
+</body>
+
+</html>
